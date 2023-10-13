@@ -10,6 +10,9 @@
     padding: 20px;
     padding-top: 91px;
   }
+  .labs-container {
+    width: 86vw;
+  }
   .labs-form-submit {
     width: 97%;
     align-self: center;
