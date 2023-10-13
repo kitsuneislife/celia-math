@@ -3,6 +3,9 @@
   /*font-family: 'Pacifico', cursive;
   font-family: 'Teko', sans-serif;*/
   font-family: 'Work Sans', sans-serif;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .v-nav-container {
@@ -115,4 +118,29 @@
 
 .h-nav-s-icon {
   
+}
+
+#main-container {
+  height: 100vh;
+  width: 91.2vw;
+  padding: 25px;
+  padding-left: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mc-label {
+}
+
+.mc-label-cursive {
+  font-family: 'Pacifico', cursive;
+  font-size: 80px;
+  color: #687EFF;
+}
+
+.mc-label-math {
+  font-family: 'Teko', sans-serif;
+  font-size: 80px;
+  color: #80B3FF;
+  margin-left: -6px;
 }

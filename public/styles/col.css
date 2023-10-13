@@ -1,0 +1,65 @@
+.col-label {
+  background-color: #80B3FF;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 90vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+.active, .col-label:hover {
+  background-color: #687EFF;
+}
+
+.col-label:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.col-content {
+  width: 87.7vw;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.cc-row {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.cc-label:hover {
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.labs-container {
+  display: none;
+  background: #f1f1f1;
+  width: 88.7vw;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Teko&family=Work+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link href="/styles/home.css" rel="stylesheet" type="text/css"/>
     <link href="/styles/media.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/col.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
     <div id="v-nav-container" class="v-nav-container">
@@ -39,7 +40,14 @@
         </div>
       </div>
     </div>
-    <main>
+    <main id="main-container">
+      <%if(req.query.page == "formulas") {%>
+        <%-include("formulas.ejs")%>
+      <%} else if(req.query.page == "sobre") {%>
+        <%-include("sobre.ejs")%>
+      <%} else {%>
+        <%-include("formulas.ejs")%>
+      <%}%>
     </main>
   <script src="/scripts/mobilemenu.js"> </script>
   </body>

@@ -5,4 +5,9 @@
   .mobile-topbar {
     display: flex;
   }
+  #main-container {
+    width: 100vw;
+    padding: 20px;
+    padding-top: 91px;
+  }
 }

@@ -1,0 +1,41 @@
+<div class="mc-label">
+  <span class="mc-label-cursive">Célia</span>
+  <span class="mc-label-math">.MATH</span>
+</div>
+<div class="center">
+  <div class="labs-container">
+    
+  </div>
+  <button class="col-label">Áreas</button>
+  <div class="col-content">
+    <row class="cc-row">
+      <img src="/assets/cube.svg">
+      <span class="cc-label">Quadrado</span>
+    </row>
+    <row class="cc-row">
+      <img src="/assets/cube.svg">
+      <span class="cc-label">Retângulo</span>
+    </row>
+    <row class="cc-row">
+      <img src="/assets/cube.svg">
+      <span class="cc-label">Triângulo</span>
+    </row>
+  </div>
+</div>
+
+<script>
+  var coll = document.getElementsByClassName("col-label");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight){
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      } 
+    });
+  }
+</script>
