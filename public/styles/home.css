@@ -3,9 +3,20 @@
   /*font-family: 'Pacifico', cursive;
   font-family: 'Teko', sans-serif;*/
   font-family: 'Work Sans', sans-serif;
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  
+}
+
+row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
 }
 
 .v-nav-container {
@@ -130,6 +141,7 @@
 }
 
 .mc-label {
+  margin-bottom: 10px;
 }
 
 .mc-label-cursive {

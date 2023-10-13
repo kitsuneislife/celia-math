@@ -58,8 +58,156 @@
 
 .labs-container {
   display: none;
+  flex-direction: column;
   background: #f1f1f1;
   width: 88.7vw;
   padding: 15px 10px;
   margin-bottom: 20px;
+  gap: 20px; 
+}
+
+.labs-row {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  gap: 5px;
+}
+
+.labs-label {
+}
+
+#labs-l-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.labs-formula {
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-size: 20px;
+  padding: 10px 18px 10px 15px;
+  border: 1px solid #687EFF;
+  color: #687EFF;
+  width: fit-content;
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.labs-formula span {
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-size: 20px;
+  color: #687EFF;
+  padding-right: 7px;
+}
+
+.frac-top {
+  border-bottom: 2px solid #687EFF;
+}
+
+.labs-desc-row {
+  display: flex;
+  align-items: center;
+}
+
+.labs-desc {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 5px;
+  margin-left: 10px;
+}
+
+.labs-desc-icon {
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  color: #687EFF;
+  width: 20px;
+}
+
+.labs-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  gap: 5px;
+  width: fit-content;
+}
+
+.labs-form-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  /*line-height: .75rem;*/
+  color: #687EFF;
+  margin-right: 10px;
+}
+
+.labs-form-input {
+  width: 200px;
+  margin-left: auto;
+}
+
+.labs-form-submit {
+  border: none;
+  background: #80B3FF;
+  color: white;
+  width: 256px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.2s
+}
+
+.labs-form-submit:hover {
+  background: #687EFF;
+}
+
+.labs-sol {
+  margin-left: 10px;
+  display: none;
+  align-items: center;
+  padding: 10px;
+  overflow-y: hidden;
+  gap: 10px;
+}
+
+.labs-answer {
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-size: 20px;
+  padding: 10px 18px 10px 15px;
+  border: 1px solid #687EFF;
+  color: #687EFF;
+  width: fit-content;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.labs-answer span {
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-size: 20px;
+  color: #687EFF;
+  padding-right: 7px;
+}
+
+.labs-answer row {
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-size: 20px;
+  color: #687EFF;
+  padding-right: 7px;
+  gap: 10px;
+}
+
+@media (max-width: 1280px) {
+  .labs-form-submit {
+    width: 97%;
+    align-self: center;
+    margin-left: -10px;
+  }
 }
