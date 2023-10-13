@@ -12,5 +12,13 @@
   }
   .labs-form-submit {
     width: 97%;
+    align-self: center;
+    margin-left: -10px;
+  }
+  .col-content {
+    width: 82vw;
+  }
+  .cc-row {
+    width: 86vw;
   }
 }

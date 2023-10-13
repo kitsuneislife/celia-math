@@ -44,6 +44,11 @@
   padding-bottom: 5px;
   gap: 5px;
   cursor: pointer;
+  transition: background 0.2s
+}
+
+.cc-row:hover {
+  background: #dadada;
 }
 
 .cc-label:hover {
@@ -84,15 +89,15 @@
 .labs-formula {
   font-family: 'Pacifico', cursive;
   font-style: italic;
-  font-size: 20px;
-  padding: 10px 18px 10px 15px;
+  font-size: 35px;
+  padding: 7px 18px 10px 15px;
   border: 1px solid #687EFF;
   color: #687EFF;
   width: fit-content;
   margin-left: 10px;
   display: flex;
   gap: 10px;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .labs-formula span {
@@ -175,8 +180,8 @@
 .labs-answer {
   font-family: 'Pacifico', cursive;
   font-style: italic;
-  font-size: 20px;
-  padding: 10px 18px 10px 15px;
+  font-size: 35px;
+  padding: 7px 18px 10px 15px;
   border: 1px solid #687EFF;
   color: #687EFF;
   width: fit-content;
@@ -184,7 +189,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .labs-answer span {
@@ -202,12 +207,4 @@
   color: #687EFF;
   padding-right: 7px;
   gap: 10px;
-}
-
-@media (max-width: 1280px) {
-  .labs-form-submit {
-    width: 97%;
-    align-self: center;
-    margin-left: -10px;
-  }
 }

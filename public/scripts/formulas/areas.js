@@ -9,7 +9,8 @@ function areaQuadrado () {
   
   var A = l * l;
   console.log(A);
-  labsanswer.innerHTML = `A = ${l}²<br>A = ${A}`;
+  labsanswer.innerHTML = `\\(A = ${l}^2\\)<br>\\(A = ${A}\\)`;
+  MathJax.typeset([labsanswer]);
   return A;
 }
 
@@ -27,7 +28,8 @@ function areaRetangulo () {
 
   var A = c * l;
   console.log(A);
-  labsanswer.innerHTML = `A = ${c} x ${l}<br>A = ${A}`;
+  labsanswer.innerHTML = `\\(A = ${c} \\cdot ${l}\\)<br>\\(A = ${A}\\)`;
+  MathJax.typeset([labsanswer]);
   return A;
 }
 
@@ -45,6 +47,7 @@ function areaTriangulo () {
 
   var A = (b * h) / 2;
   console.log(A);
-  labsanswer.innerHTML = `<row>A = <div class='col'><span class='frac-top'>${b} x ${h}</span><span>2</span></div></row><row>A = <div class='col'><span class='frac-top'>${b * h}</span><span>2</span></div></row><row>A = ${A}</row>`;
+  labsanswer.innerHTML = `\\(A = \\frac{${b} \\cdot ${h}}{2}\\)<br>\\(A = \\frac{${b * h}}{2}\\)<br>\\(A = ${A}\\)`;
+  MathJax.typeset([labsanswer]);
   return A;
 }
