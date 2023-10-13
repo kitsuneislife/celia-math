@@ -4,14 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>CéliaMath</title>
-    <link href="/style/home.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Teko&family=Work+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="/styles/home.css" rel="stylesheet" type="text/css"/>
+    <link href="/styles/media.css" rel="stylesheet" type="text/css"/>
   </head>
   <body>
-    <header>
+    <div id="v-nav-container" class="v-nav-container">
+      <img class="v-nav-icon" src="/assets/functions.svg">
+      <img class="v-nav-icon" src="/assets/info.svg">
+    </div>
+    <div class="mobile-topbar">
       <div>
+        <span class="mt-label-cursive">Célia</span>
+        <span class="mt-label-math">.MATH</span>
       </div>
-    </header>
+      <img id="mt-button" class="mt-icon" src="/assets/menu.svg">
+    </div>
+    <div id="h-nav-container" class="h-nav-container">
+      <div class="h-nav-topbar">
+        <!--img id="h-nav-close" src="/assets/close.svg"-->
+        <!--input></input-->
+        <span id="h-nav-close">FECHAR</span>
+      </div>
+      <div class="h-nav-content">
+        <div class="h-nav-separator">
+          <span class="h-nav-label">Fórmulas</span>
+          <img class="h-nav-s-icon" src="/assets/arrow_forward.svg">
+        </div>
+        <div class="h-nav-separator">
+          <span class="h-nav-label">Sobre</span>
+          <img class="h-nav-s-icon" src="/assets/arrow_forward.svg">
+        </div>
+      </div>
+    </div>
     <main>
     </main>
+  <script src="/scripts/mobilemenu.js"> </script>
   </body>
 </html>

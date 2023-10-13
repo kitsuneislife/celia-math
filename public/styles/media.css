@@ -1,0 +1,8 @@
+@media (max-width: 1280px) {
+  .v-nav-container {
+    display: none;
+  }
+  .mobile-topbar {
+    display: flex;
+  }
+}
