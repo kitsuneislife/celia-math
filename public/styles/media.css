@@ -10,6 +10,9 @@
     padding: 20px;
     padding-top: 91px;
   }
+  .mc-label {
+    display: none;
+  }
   .col-label {
     width: 90vw;
   }
