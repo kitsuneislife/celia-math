@@ -46,8 +46,22 @@
   transition: background 0.2s
 }
 
+.cc-row img {
+  width: 24px;
+  height: 24px;
+}
+
 .cc-row:hover {
   background: #dadada;
+}
+
+.cc-row.disabled {
+  text-decoration: line-through;
+  color: red;
+}
+
+.cc-row.disabled:hover {
+  
 }
 
 .cc-label:hover {
@@ -75,6 +89,18 @@
   align-items: center;
   font-size: 24px;
   gap: 5px;
+  justify-content: space-between;
+}
+
+#labs-close {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .99rem;
+  line-height: .99rem;
+  letter-spacing: .2px;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
 .labs-label {

@@ -5,8 +5,11 @@
 <div class="center">
   <div id="labs-container" class="labs-container">
     <row class="labs-row">
-      <img id="labs-l-icon" src="/assets/function.svg">
-      <span id="labs-label" class="labs-label"></span>
+      <row class="labs-row">
+        <img id="labs-l-icon" src="/assets/function.svg">
+        <span id="labs-label" class="labs-label"></span>
+      </row>
+      <span id="labs-close">FECHAR</span>
     </row>
     <p id="labs-formula" class="labs-formula"></p>
     <div id="labs-desc" class="labs-desc"></div>
@@ -45,6 +48,14 @@
     <row class="cc-row" onclick="openCirculo()">
       <img src="/assets/cube.svg">
       <span class="cc-label">Círculo</span>
+    </row>
+    <row class="cc-row disabled" onclick="openAreaCone()">
+      <img src="/assets/cube-disabled.png">
+      <span class="cc-label">Cone</span>
+    </row>
+    <row class="cc-row disabled" onclick="openAreaEsfera()">
+      <img src="/assets/cube-disabled.png">
+      <span class="cc-label">Esfera</span>
     </row>
   </div>
 </div>

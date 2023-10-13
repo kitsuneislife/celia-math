@@ -5,6 +5,11 @@ const labsdesc = document.getElementById("labs-desc");
 const labsform = document.getElementById("labs-form");
 const labssol = document.getElementById("labs-sol");
 
+const labsclose = document.getElementById("labs-close");
+labsclose.addEventListener("click", () => {
+  labscontainer.style.display = "none";
+});
+
 function validarNumero(input) {
     const valor = input.value;
     const numero = parseFloat(valor);
