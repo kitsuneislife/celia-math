@@ -31,8 +31,16 @@
   </head>
   <body>
     <div id="v-nav-container" class="v-nav-container">
-      <img class="v-nav-icon" src="/assets/functions.svg">
-      <img class="v-nav-icon" src="/assets/info.svg">
+      <div class="v-nav-able">
+        <row class="vnc-hover" onclick="window.location.href='?page=formulas'">
+          <img class="v-nav-icon" src="/assets/functions.svg">
+          <span class="v-nav-label">Fórmulas</span>
+        </row>
+        <row class="vnc-hover" onclick="window.location.href='?page=sobre'">
+          <img class="v-nav-icon" src="/assets/info.svg">
+          <span class="v-nav-label">Sobre</span>
+        </row>
+      </div>
     </div>
     <div class="mobile-topbar">
       <div>
@@ -48,11 +56,11 @@
         <span id="h-nav-close">FECHAR</span>
       </div>
       <div class="h-nav-content">
-        <div class="h-nav-separator">
+        <div class="h-nav-separator" onclick="window.location.href='?page=formulas'">
           <span class="h-nav-label">Fórmulas</span>
           <img class="h-nav-s-icon" src="/assets/arrow_forward.svg">
         </div>
-        <div class="h-nav-separator">
+        <div class="h-nav-separator" onclick="window.location.href='?page=sobre'">
           <span class="h-nav-label">Sobre</span>
           <img class="h-nav-s-icon" src="/assets/arrow_forward.svg">
         </div>
@@ -68,6 +76,7 @@
       <%}%>
     </main>
   <script src="/scripts/mobilemenu.js"> </script>
+  <script src="/scripts/nav.js"> </script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </body>

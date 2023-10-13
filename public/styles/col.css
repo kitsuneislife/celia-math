@@ -3,7 +3,7 @@
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 90vw;
+  width: 85vw;
   border: none;
   text-align: left;
   outline: none;
@@ -11,7 +11,7 @@
   transition: background-color 0.2s;
 }
 
-.active, .col-label:hover {
+.col-label:hover {
   background-color: #687EFF;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .col-content {
-  width: 87.7vw;
-  padding: 0 18px;
+  width: 85vw;
+  padding: 0px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -40,8 +40,7 @@
   display: flex;
   align-items: center;
   font-size: 16px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 18px 5px 18px;
   gap: 5px;
   cursor: pointer;
   transition: background 0.2s
@@ -65,7 +64,7 @@
   display: none;
   flex-direction: column;
   background: #f1f1f1;
-  width: 88.7vw;
+  width: 83.65vw;
   padding: 15px 10px;
   margin-bottom: 20px;
   gap: 20px; 

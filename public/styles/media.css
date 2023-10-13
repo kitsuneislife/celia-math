@@ -10,6 +10,9 @@
     padding: 20px;
     padding-top: 91px;
   }
+  .col-label {
+    width: 90vw;
+  }
   .labs-container {
     width: 86vw;
   }
@@ -19,7 +22,7 @@
     margin-left: -10px;
   }
   .col-content {
-    width: 82vw;
+    width: 90vw;
   }
   .cc-row {
     width: 86vw;
