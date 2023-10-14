@@ -35,3 +35,22 @@ function volumeParalelepipedo () {
   MathJax.typeset([labsanswer]);
   return V;
 }
+
+function volumePrismaregular () {
+  var volumeprismaregularinputareadabase = document.getElementById("volumeprismaregular-input-areadabase");
+  var volumeprismaregularinputaltura = document.getElementById("volumeprismaregular-input-altura");
+  var labsanswer = document.getElementById("labs-answer");
+  var Ab = parseFloat(volumeprismaregularinputareadabase.value);
+  var h = parseFloat(volumeprismaregularinputaltura.value);
+
+  if(!Ab || isNaN(Ab)) return;
+  if(!h || isNaN(h)) return;
+  var labssol = document.getElementById("labs-sol");
+  labssol.style.display = "flex";
+
+  var V = Ab * h;
+  console.log(V);
+  labsanswer.innerHTML = `\\(V = ${Ab} \\cdot ${h} \\)<br>\\(V = ${V}\\)`;
+  MathJax.typeset([labsanswer]);
+  return V;
+}
